@@ -1,0 +1,2 @@
+<div *ngFor="let category of categories" class="item d-flex justify-content-between"><a
+  [routerLink]="['/blog']" [queryParams]="{ category: category.cat }">{{ category.cat }}</a><span>{{ category.num }}</span></div>

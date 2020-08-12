@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <!-- Latest Posts -->
+    <main class="posts-listing col-lg-8">
+      <div class="container">
+        <div class="row">
+          <!-- post -->
+          <div class="post col-xl-6" *ngFor="let blogPost of blogPosts;">
+            <app-post-card [blogPost]="blogPost">
+            </app-post-card>
+          </div>
+          <div class="w-100"><app-paging (newPage) = 'getPage($event)' [page]='page'></app-paging></div>
+        </div>
+      </div>
+    </main>
+    <aside class="col-lg-4">
+      <!-- Widget [Search Bar Widget]-->
+      <div class="widget search">
+        <header>
+          <h3 class="h6">Search the blog</h3>
+        </header>
+        <form action="#" class="search-form">
+          <div class="form-group">
+            <input type="search" placeholder="What are you looking for?">
+            <button type="submit" class="submit"><i class="icon-search"></i></button>
+          </div>
+        </form>
+      </div>
+      <!-- Widget [Latest Posts Widget] -->
+      <div class="widget latest-posts">
+        <header>
+          <h3 class="h6">Latest Posts</h3>
+        </header>
+        <div class="blog-posts"><a routerLink>
+            <app-latest-posts></app-latest-posts>
+          </a></div>
+      </div>
+      <!-- Widget [Categories Widget]-->
+      <div class="widget categories">
+        <header>
+          <h3 class="h6">Categories</h3>
+        </header>
+        <app-categories></app-categories>
+      </div>
+      <!-- Widget [Tags Cloud Widget]-->
+      <div class="widget tags">
+        <header>
+          <h3 class="h6">Tags</h3>
+        </header>
+        <ul class="list-inline">
+          <app-tags></app-tags>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
