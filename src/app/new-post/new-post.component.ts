@@ -28,7 +28,7 @@ export class NewPostComponent implements OnInit {
     this.blogPost.postDate = new Date().toLocaleDateString();
     this.blogPost.postedBy = 'WEB422 Student';
     this.blogPost.views = 0;
-    this.dataService.newPost(this.blogPost).subscribe(() => this.route.navigate(['admin']));
+    this.dataService.newPost(this.blogPost).subscribe(() => this.route.navigate(['/admin']));
   }
 
   ngOnInit(): void {

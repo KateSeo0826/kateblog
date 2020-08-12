@@ -22,11 +22,11 @@ export class EditPostComponent implements OnInit {
 
   formSubmit(): void {
     this.blogPost.tags = this.tags.split(',').map(tag => tag.trim());
-    this.dataService.updatePostById(this.blogPost._id, this.blogPost).subscribe(() => this.route.navigate(['admin']));
+    this.dataService.updatePostById(this.blogPost._id, this.blogPost).subscribe(() => this.route.navigate(['/admin']));
   }
 
   deltePost(): void {
-    this.dataService.deletePostById(this.blogPost._id).subscribe(() => this.route.navigate(['admin']));
+    this.dataService.deletePostById(this.blogPost._id).subscribe(() => this.route.navigate(['/admin']));
   }
 
 
