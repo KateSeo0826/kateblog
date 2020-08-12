@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogPost } from '../BlogPost';
-import { PostService } from '../Post.service';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'app-footer-posts',

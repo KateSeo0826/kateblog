@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BlogPost } from '../BlogPost';
-import { PostService } from '../Post.service';
+import { PostService } from '../post.service';
 import { ActivatedRoute, Params } from '@angular/router';
 
 

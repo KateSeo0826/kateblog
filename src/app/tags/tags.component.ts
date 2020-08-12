@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../Post.service';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'app-tags',
