@@ -19,10 +19,8 @@ export class NewPostComponent implements OnInit {
   ) { }
 
   formSubmit(): void{
-    this.tags = this.blogPost.tags.toString();
+    this.tags = this.blogPost.tags != null ? this.blogPost.tags.toString() : '';
     this.tagsArray = this.tags.split(',').map(tag => tag.trim());
-    console.log(this.tags);
-    console.log(this.blogPost.tags);
     this.blogPost.tags = this.tagsArray;
     this.blogPost.isPrivate = false;
     this.blogPost.postDate = new Date().toLocaleDateString();
