@@ -5,6 +5,7 @@
 * distributed to other students.
 *
 * Name: Dong Seon Seo Student ID: 120818182 Date: Aug 12th, 2020
+* Online Link: https://trusting-khorana-3e05d2.netlify.app/home
 *
 ********************************************************************************/
 
