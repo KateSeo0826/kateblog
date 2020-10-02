@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h1>Bootstrap 4 Blog - A free template by Bootstrap Temple</h1><a routerLink class="hero-link">Discover More</a>
+        <h1>Kate's Blog </h1><a [routerLink]="['/blog']" class="hero-link">Discover More</a>
       </div>
     </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
   </div>
@@ -19,6 +19,8 @@
             attention</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea
           commodo consequat. Duis aute irure dolor in reprehenderi.</p>
+
+
       </div>
     </div>
   </div>
@@ -31,48 +33,32 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>Business</a><a routerLink>Technology</a></div><a routerLink="/post">
-                <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2>
-              </a>
+              <div class="category"><a [routerLink]="['/blog']" [queryParams]="{ category: 'Movie' }">Movie
+                  <h2 class="h4">Become Hero & Heroine!</h2>
+                  <p> </p>
+                </a>
+              </div>
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink
-                class="author d-flex align-items-center flex-wrap">
-                <div class="avatar"><img src="/assets/img/avatar-1.jpg" alt="" class="img-fluid"></div>
-                <div class="title"><span>John Doe</span></div>
-              </a>
-              <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-              <div class="comments"><i class="icon-comment"></i>12</div>
-            </footer>
+
           </div>
         </div>
       </div>
-      <div class="image col-lg-5"><img src="/assets/img/featured-pic-1.jpeg" alt=""></div>
+      <div class="image col-lg-5"><img src="/assets/img/movie.jpg" alt=""></div>
     </div>
     <!-- Post -->
     <div class="row d-flex align-items-stretch">
-      <div class="image col-lg-5"><img src="/assets/img/featured-pic-2.jpeg" alt=""></div>
+      <div class="image col-lg-5"><img src="/assets/img/Books.jpg" alt=""></div>
       <div class="text col-lg-7">
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>Business</a><a routerLink>Technology</a></div><a routerLink="/post">
-                <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2>
-              </a>
+              <div class="category"><a [routerLink]="['/blog']" [queryParams]="{ category: 'Book' }">Book
+                  <h2 class="h4">Food For Thought!</h2>
+                  <p> </p>
+                </a>
+              </div>
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink
-                class="author d-flex align-items-center flex-wrap">
-                <div class="avatar"><img src="/assets/img/avatar-2.jpg" alt="" class="img-fluid"></div>
-                <div class="title"><span>John Doe</span></div>
-              </a>
-              <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-              <div class="comments"><i class="icon-comment"></i>12</div>
-            </footer>
+
           </div>
         </div>
       </div>
@@ -83,25 +69,16 @@
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a routerLink>Business</a><a routerLink>Technology</a></div><a routerLink="/post">
-                <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2>
-              </a>
+              <div class="category"><a [routerLink]="['/blog']" [queryParams]="{ category: 'Museum' }">Movie
+                  <h2 class="h4">Go Back To Time Travel With Arts</h2>
+                  <p> </p>
+                </a>
+              </div>
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-            <footer class="post-footer d-flex align-items-center"><a routerLink
-                class="author d-flex align-items-center flex-wrap">
-                <div class="avatar"><img src="/assets/img/avatar-3.jpg" alt="" class="img-fluid"></div>
-                <div class="title"><span>John Doe</span></div>
-              </a>
-              <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-              <div class="comments"><i class="icon-comment"></i>12</div>
-            </footer>
           </div>
         </div>
       </div>
-      <div class="image col-lg-5"><img src="/assets/img/featured-pic-3.jpeg" alt=""></div>
+      <div class="image col-lg-5"><img src="/assets/img/museum.jpg" alt=""></div>
     </div>
   </div>
 </section>
@@ -111,8 +88,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua</h2><a routerLink class="hero-link">View More</a>
+        <h2 style="font-family: 'Open Sans Condensed', sans-serif; font-weight: 100; font-size:2.0rem">Books and movies
+          are like apples and oranges. <br>They Both are fruit, but taste completely different. <br><br>
+          Stephen King</h2>
       </div>
     </div>
   </div>
@@ -125,46 +103,19 @@
       <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </header>
     <div class="row">
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="/assets/img/blog-1.jpg" alt=""
-              class="img-fluid"></a></div>
+      <div class="post col-md-4" *ngFor="let post of posts">
+        <div class="post-thumbnail"><a [routerLink]="['/post', post._id]"><img style="width:350px; height:300px;"
+              [src]="post.featuredImage" alt="" class="img-fluid"></a></div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
-            <div class="date">20 May | 2016</div>
-            <div class="category"><a routerLink>Business</a></div>
+            <div class="date">{{ post.postDate | date: 'mediumDate' }} </div>
+            <div class="category"><a routerLink>{{ post.category }}</a></div>
           </div><a routerLink="/post">
-            <h3 class="h4">Ways to remember your important ideas</h3>
+            <h3 class="h4">{{ post.title }}</h3>
           </a>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore.</p>
-        </div>
-      </div>
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="/assets/img/blog-2.jpg" alt=""
-              class="img-fluid"></a></div>
-        <div class="post-details">
-          <div class="post-meta d-flex justify-content-between">
-            <div class="date">20 May | 2016</div>
-            <div class="category"><a routerLink>Technology</a></div>
-          </div><a routerLink="/post">
-            <h3 class="h4">Diversity in Engineering: Effect on Questions</h3>
-          </a>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore.</p>
-        </div>
-      </div>
-      <div class="post col-md-4">
-        <div class="post-thumbnail"><a routerLink="/post"><img src="/assets/img/blog-3.jpg" alt=""
-              class="img-fluid"></a></div>
-        <div class="post-details">
-          <div class="post-meta d-flex justify-content-between">
-            <div class="date">20 May | 2016</div>
-            <div class="category"><a routerLink>Financial</a></div>
-          </div><a routerLink="/post">
-            <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3>
-          </a>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore.</p>
+          <div style="height:70px; overflow:hidden">
+            <p class="text-muted" [innerHTML]="post.post"></p>
+          </div>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import { BlogPost } from '../BlogPost';
 export class EditPostComponent implements OnInit {
   blogPost: BlogPost;
   tags: string;
+  tagsArray: string[];
 
 
   constructor(
@@ -21,7 +22,9 @@ export class EditPostComponent implements OnInit {
   ) { }
 
   formSubmit(): void {
-    this.blogPost.tags = this.tags.split(',').map(tag => tag.trim());
+    this.tags = this.blogPost.tags != null ? this.blogPost.tags.toString() : '';
+    this.tagsArray = this.tags.split(',').map(tag => tag.trim());
+    this.blogPost.tags = this.tagsArray;
     this.dataService.updatePostById(this.blogPost._id, this.blogPost).subscribe(() => this.route.navigate(['/admin']));
   }
 

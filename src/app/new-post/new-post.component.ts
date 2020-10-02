@@ -24,9 +24,11 @@ export class NewPostComponent implements OnInit {
     this.blogPost.tags = this.tagsArray;
     this.blogPost.isPrivate = false;
     this.blogPost.postDate = new Date().toLocaleDateString();
-    this.blogPost.postedBy = 'WEB422 Student';
+    this.blogPost.postedBy = 'Kate Seo';
     this.blogPost.views = 0;
+
     this.dataService.newPost(this.blogPost).subscribe(() => this.route.navigate(['/admin']));
+    console.log(this.blogPost.title);
   }
 
   ngOnInit(): void {

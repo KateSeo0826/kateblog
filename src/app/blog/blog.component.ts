@@ -3,7 +3,6 @@ import { BlogPost } from '../BlogPost';
 import { PostService } from '../post.service';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -20,7 +19,7 @@ export class BlogComponent implements OnInit {
 
   constructor(
     private dataService: PostService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
   ) { }
 
   // tslint:disable-next-line: typedef
