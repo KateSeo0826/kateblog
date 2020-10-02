@@ -25,7 +25,6 @@ import { EditPostComponent } from './edit-post/edit-post.component';
 import { NewPostComponent } from './new-post/new-post.component';
 import { FilterPipe } from './filter.pipe';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +45,7 @@ import { FilterPipe } from './filter.pipe';
     PostsTableComponent,
     EditPostComponent,
     NewPostComponent,
-    FilterPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
