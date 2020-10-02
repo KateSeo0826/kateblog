@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NewPostComponent } from './new-post/new-post.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
 import { PostsTableComponent } from './posts-table/posts-table.component';
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
